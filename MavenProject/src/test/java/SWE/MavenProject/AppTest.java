@@ -11,15 +11,22 @@ public class AppTest extends App
 {
     
     @Test
-    public void shouldAnswerWithTrue()
+    public void testMaximum()
     {
-    	String[] args1 = {"2","9","30","1","20"};
-    	assertEquals("30", getMaximum(args1));
+    	Integer[] args1 = {2,9,30,1,20};
+    	assertEquals(30, getMaximum(args1));
     	
+    }
+    
+    @Test
+    public void testReverse() {
     	String[] args2 = {"Follow"};
     	assertEquals("wolloF", getReverse(args2));
-    	
-    	String[] args3 = {"2"};
-    	assertEquals("8", getCube(args3));
+    }
+    
+    @Test
+    public void testCube() {
+    	Integer args3 = 2;
+    	assertEquals(8, getCube(args3));
     }
 }

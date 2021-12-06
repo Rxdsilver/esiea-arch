@@ -20,20 +20,20 @@ public class App
 	    return String.valueOf(ch);
     }
     
-    public String getMaximum(String[] array) {
-    	Integer ret = Integer.parseInt(array[0]);
+    public int getMaximum(Integer[] array) {
+    	Integer ret = array[0];
     	
-        for (int i = 0; i< array.length ;i++) {
-     	   if (Integer.parseInt(array[i])>ret) {
-     		   ret = Integer.parseInt(array[i]);
+        for (int i = 1; i< array.length ;i++) {
+     	   if (array[i]>ret) {
+     		   ret = array[i];
      	   }
         }     
-        return ret.toString();
+        return ret;
     }
     
-    public String getCube(String[] array) {
-    	Integer temp = Integer.parseInt(array[0]);
+    public int getCube(Integer integer) {
+    	Integer temp = integer;
     	temp = temp*temp*temp;
-    	return String.valueOf(temp);
+    	return temp;
     }
 }
